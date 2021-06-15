@@ -144,6 +144,19 @@ $ diff prepare{,.bak}
 
 参考：https://github.com/vmware/harbor/issues/2920
 
+## 修改配置
+```
+vi /etc/profile
+export COMPOSE_HTTP_TIMEOUT=500
+export DOCKER_CLIENT_TIMEOUT=500
+source /etc/profile
+```
+避免出现如下错误
+```
+ERROR: An HTTP request took too long to complete. Retry with --verbose to obtain debug information.
+If you encounter this issue regularly because of slow network conditions, consider setting COMPOSE_HTTP_TIMEOUT to a higher value (current value: 60).
+```
+
 ## 加载和启动 harbor 镜像
 
 ``` bash
