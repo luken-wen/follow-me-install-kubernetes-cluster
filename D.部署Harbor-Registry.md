@@ -149,6 +149,7 @@ $ diff prepare{,.bak}
 vi /etc/profile
 export COMPOSE_HTTP_TIMEOUT=500
 export DOCKER_CLIENT_TIMEOUT=500
+
 source /etc/profile
 ```
 避免出现如下错误
