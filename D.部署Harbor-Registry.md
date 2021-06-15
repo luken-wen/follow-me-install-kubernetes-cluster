@@ -34,7 +34,7 @@ $
 从 docker compose [发布页面](https://github.com/docker/compose/releases)下载最新的 `docker-compose` 二进制文件
 
 ``` bash
-$ wget https://github.com/docker/compose/releases/download/1.21.2/docker-compose-Linux-x86_64
+$ wget https://github.com/docker/compose/releases/download/1.29.2/docker-compose-Linux-x86_64
 $ mv ~/docker-compose-Linux-x86_64 /opt/k8s/bin/docker-compose
 $ chmod a+x  /opt/k8s/bin/docker-compose
 $ export PATH=/opt/k8s/bin:$PATH
@@ -44,7 +44,8 @@ $
 从 harbor [发布页面](https://github.com/vmware/harbor/releases)下载最新的 harbor 离线安装包
 
 ``` bash
-$ wget  --continue https://storage.googleapis.com/harbor-releases/release-1.5.0/harbor-offline-installer-v1.5.1.tgz
+# wget  --continue https://storage.googleapis.com/harbor-releases/release-1.5.0/harbor-offline-installer-v1.5.1.tgz
+$ wget  --continue  https://github.com/goharbor/harbor/releases/download/v2.2.2/harbor-offline-installer-v2.2.2.tgz
 $ tar -xzvf harbor-offline-installer-v1.5.1.tgz
 $
 ```
