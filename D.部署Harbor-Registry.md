@@ -325,3 +325,9 @@ $ sudo chmod -R 666 common ## 防止容器进程没有权限读取生成的配�
 $ # 启动 harbor
 $ docker-compose up -d
 ```
+
+## 标记镜像及推送镜像
+```
+docker tag nginx 10.0.0.105/kubernetes/nginx:latest
+docker push 10.0.0.105/kubernetes/nginx:latest
+```
